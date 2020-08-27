@@ -1,6 +1,9 @@
+/* eslint-disable react/jsx-props-no-spreading */
+import React from 'react';
+import { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => (
+  <Component {...pageProps} />
+);
 
-export default MyApp
+export default MyApp;

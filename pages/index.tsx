@@ -1,15 +1,16 @@
-import Head from 'next/head'
+import React from 'react';
+import Head from 'next/head';
 
-export default function Home() {
-  return (
-    <div >
-      <Head>
-        <title>Next App</title>
-      </Head>
+const Home: React.FC = () => (
+  <div>
+    <Head>
+      <title>Next App</title>
+    </Head>
 
-      <main >
-        <h1>Hello Tony</h1>
-      </main>
-    </div>
-  )
-}
+    <main>
+      <h1>Hello Tony</h1>
+    </main>
+  </div>
+);
+
+export default Home;
